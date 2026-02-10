@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DinkToPdf" Version="1.0.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HeksaApiV2.Common\HeksaApiV2.Common.csproj" />
+    <ProjectReference Include="..\HeksaApiV2.DataAccess.MasterData\HeksaApiV2.DataAccess.MasterData.csproj" />
+    <ProjectReference Include="..\HeksaApiV2.Model\HeksaApiV2.Model.csproj" />
+  </ItemGroup>
+
+</Project>

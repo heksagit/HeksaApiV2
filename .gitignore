@@ -1,0 +1,15 @@
+.vs
+*.user
+HeksaApiV2/bin
+HeksaApiV2/obj
+HeksaApiV2.Common/bin
+HeksaApiV2.Common/obj
+HeksaApiV2.DataAccess.MasterData/bin
+HeksaApiV2.DataAccess.MasterData/obj
+HeksaApiV2.Logic/bin
+HeksaApiV2.Logic/obj
+HeksaApiV2.Model/bin
+HeksaApiV2.Model/obj
+HeksaApiV2/HeksaApiV2.csproj.user
+HeksaApiV2/Properties/PublishProfiles
+HeksaApiV2/Properties/launchSettings.json
