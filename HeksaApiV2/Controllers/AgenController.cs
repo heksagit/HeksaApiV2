@@ -33,7 +33,7 @@ namespace HeksaApiV2.Controllers
             _agenCoreLogic = _iagenCoreLogic;
         }
 
-        [HttpPost, Route("api/agen/getdateref")]
+        [HttpPost, Route("api/agen/referensi")]
         public IActionResult GetDataReferralHeksaStore(string kodeAgen, string kategoriAgen)
         {
             IResult<ReferralHeksaStoreModel> result = new ResultModel<ReferralHeksaStoreModel>();
