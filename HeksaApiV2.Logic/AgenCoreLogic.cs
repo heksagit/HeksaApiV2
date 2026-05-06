@@ -88,7 +88,7 @@ namespace HeksaApiV2.Logic
             if (dtAgen.TanggalKadaluarsaAAJI.Value.Date < DateTime.Now.Date)
                 return result.ReturnFailed("Lisensi data agen telah kadaluarsa", ResponseCode.ErrorButSuccess);
 
-            if (dtAgen.IDPemasaran != "01" && dtAgen.IDPemasaran != "02")
+            if (!new List<string>() { "01", "02", "07" }.Contains(dtAgen.IDPemasaran))
                 return result.ReturnFailed("Jalur distribusi agen tidak valid", ResponseCode.ErrorButSuccess);
 
             model.RefCode = dtAgen.AgenCode;
