@@ -85,7 +85,7 @@ namespace HeksaApiV2.Logic
             if (dtAgen.StatusAgen.TrimNull().ToLower() == "terminated")
                 return result.ReturnFailed("Data agen sudah tidak aktif", ResponseCode.ErrorButSuccess);
 
-            if (dtAgen.IDPemasaran != "01") //pemasaran Pos Assurance tidak usah validasi lisensi AAJI
+            if (!(dtAgen.IDPemasaran == "01" || dtAgen.IDPemasaran == "06")) //pemasaran Pos Assurance tidak usah validasi lisensi AAJI, 06 untuk Business Alternate
             {
                 if (!dtAgen.TanggalKadaluarsaAAJI.HasValue)
                     return result.ReturnFailed("Lisensi data agen tidak valid", ResponseCode.ErrorButSuccess);
