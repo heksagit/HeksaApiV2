@@ -79,7 +79,7 @@ namespace HeksaApiV2.Logic
             if (dtAgen == null || string.IsNullOrEmpty(dtAgen.AgenId))
                 return result.ReturnFailed("Data referensi tidak ditemukan pada sistem", ResponseCode.ErrorParameter);
 
-            if (!new List<string>() { "01", "02", "07" }.Contains(dtAgen.IDPemasaran))
+            if (!new List<string>() { "01", "02", "03", "04", "05", "06", "07" }.Contains(dtAgen.IDPemasaran))
                 return result.ReturnFailed("Jalur distribusi agen tidak valid", ResponseCode.ErrorButSuccess);
 
             if (dtAgen.StatusAgen.TrimNull().ToLower() == "terminated")
